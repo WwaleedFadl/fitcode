@@ -1,6 +1,10 @@
+import { SignUp } from "@clerk/nextjs"
+
 const SignUpPage = () => {
   return (
-    <div>SignUpPage</div>
+    <main className='flex h-screen w-full items-center justify-center'>
+      <SignUp />
+    </main>
   )
 }
 
