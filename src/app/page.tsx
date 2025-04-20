@@ -1,5 +1,4 @@
-import { SignedIn, SignedOut, SignInButton } from "@clerk/clerk-react"
-import { SignOutButton } from "@clerk/nextjs"
+import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs"
 
 const HomePage = () => {
   return (
