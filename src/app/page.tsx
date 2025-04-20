@@ -1,10 +1,14 @@
-import { SignOutButton, SignUp } from "@clerk/nextjs"
-
+import { SignedIn, SignedOut, SignInButton } from "@clerk/clerk-react"
+import { SignOutButton } from "@clerk/nextjs"
 const HomePage = () => {
   return (
     <div className="text-3xl">
-      <SignUp />
-      <SignOutButton />
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <SignOutButton />
+      </SignedIn>
     </div>
   )
 }
