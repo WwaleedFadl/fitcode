@@ -1,17 +1,24 @@
-import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs"
+"use client";
+import {
+	SignedIn,
+	SignedOut,
+	SignInButton,
+	SignOutButton,
+} from "@clerk/nextjs";
 
 const HomePage = () => {
-  return (
-    <div className="text-3xl">
-      Home Page
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <SignOutButton />
-      </SignedIn>
-    </div>
-  )
-}
+	return (
+		<div className="text-3xl">
+			Home Page
+			<SignedOut>
+				<SignInButton />
+			</SignedOut>
 
-export default HomePage
+			<SignedIn>
+				<SignOutButton />
+			</SignedIn>
+		</div>
+	);
+};
+
+export default HomePage;
