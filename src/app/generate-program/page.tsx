@@ -153,7 +153,7 @@ const GenerateProgramPage = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl font-bold text-foreground">CodeFlex AI</h2>
+              <h2 className="text-xl font-bold text-foreground">FitCode</h2>
               <p className="text-sm text-muted-foreground mt-1">Fitness & Diet Coach</p>
 
               {/* SPEAKING INDICATOR */}
@@ -179,7 +179,6 @@ const GenerateProgramPage = () => {
               </div>
             </div>
           </Card>
-
           {/* USER CARD */}
           <Card className={`bg-card/90 backdrop-blur-sm border overflow-hidden relative`}>
             <div className="aspect-video flex flex-col items-center justify-center p-6 relative">
@@ -206,7 +205,6 @@ const GenerateProgramPage = () => {
             </div>
           </Card>
         </div>
-
         {/* MESSAGE COINTER  */}
         {messages.length > 0 && (
           <div
@@ -234,7 +232,6 @@ const GenerateProgramPage = () => {
             </div>
           </div>
         )}
-
         {/* CALL CONTROLS */}
         <div className="w-full flex justify-center gap-4">
           <Button
@@ -250,7 +247,6 @@ const GenerateProgramPage = () => {
             {connecting && (
               <span className="absolute inset-0 rounded-full animate-ping bg-primary/50 opacity-75"></span>
             )}
-
             <span>
               {callActive
                 ? "End Call"
