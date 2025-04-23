@@ -62,7 +62,6 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-
               {/* BUTTON */}
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Button
@@ -80,7 +79,6 @@ const HomePage = () => {
                 </Button>
               </div>
             </div>
-
             {/* RIGHT SIDE CONTENT */}
             <div className="lg:col-span-5 relative">
               {/* CORNER PIECES */}
