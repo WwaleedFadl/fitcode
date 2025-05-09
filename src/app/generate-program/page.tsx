@@ -51,12 +51,11 @@ const GenerateProgramPage = () => {
       const handleSpeechEnd = () => {
          setIsSpeaking(false)
       }
-      const handleMessage = (messge: any) => {
+      const handleMessage = (message: any) => {
          if (message.type === 'transcript' && message.transcriptType === 'final') {
             const newMessage = { content: message.transcript, role: message.role }
             setMessages(prev => [...prev, newMessage])
          }
-
       }
 
       const handleError = (error: any) => {
@@ -222,7 +221,7 @@ const GenerateProgramPage = () => {
                      {messages.map((msg, index) => (
                         <div key={index} className="message-item animate-fadeIn">
                            <div className="font-semibold text-xs text-muted-foreground mb-1">
-                              {msg.role === "assistant" ? "CodeFlex AI" : "You"}:
+                              {msg.role === "assistant" ? "Fit Code Ai" : "You"}:
                            </div>
                            <p className="text-foreground">{msg.content}</p>
                         </div>
