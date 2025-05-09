@@ -39,18 +39,22 @@ const GenerateProgramPage = () => {
          setCallActive(true)
          setCallEnded(false)
       }
+
       const handleCallEnd = () => {
          setConnecting(false)
          setCallActive(false)
          setIsSpeaking(false)
          setCallEnded(true)
       }
+
       const handleSpeechStart = () => {
          setIsSpeaking(true)
       }
+
       const handleSpeechEnd = () => {
          setIsSpeaking(false)
       }
+
       const handleMessage = (message: any) => {
          if (message.type === 'transcript' && message.transcriptType === 'final') {
             const newMessage = { content: message.transcript, role: message.role }
@@ -91,7 +95,8 @@ const GenerateProgramPage = () => {
             const fullName = user?.firstName ? `${user.firstName} ${user.lastName || ''}`.trim() : 'There';
             await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
                variableValues: {
-                  full_name: fullName
+                  full_name: fullName,
+                  user_id: user?.id
                }
             })
          } catch (error) {
