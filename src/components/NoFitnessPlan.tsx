@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import CornerElements from "./CornerElements";
 import { Button } from "./ui/button";
@@ -31,4 +30,5 @@ const NoFitnessPlan = () => {
       </div>
    );
 };
+
 export default NoFitnessPlan;
